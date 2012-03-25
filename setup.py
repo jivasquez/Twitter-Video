@@ -12,6 +12,6 @@ setup(name='twitter_video',
       packages=['Twitter_video_web_service'],
       include_package_data=True,
       zip_safe=False,
-      install_requires=['django-nonrel', 'mongodb-engine',  'djangotoolbox'],
+      install_requires=['django-nonrel', 'mongodb-engine',  'djangotoolbox', 'pymongo'],
       dependency_links = ["https://bitbucket.org/wkornewald/django-nonrel/get/be48c152abc6.tar.gz#egg=django-nonrel", "https://bitbucket.org/wkornewald/djangotoolbox/get/a8cdf61ba9c0.tar.gz#egg=djangotoolbox", "https://github.com/django-nonrel/mongodb-engine/tarball/master#egg=mongodb-engine" ],
       )
