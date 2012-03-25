@@ -1,0 +1,9 @@
+{
+"videos":[
+{% for video in videos %}
+{
+"id":"{{video.id}}", "title":"{{video.title}}"
+},
+{% endfor %}
+]
+}
