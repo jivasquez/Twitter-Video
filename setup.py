@@ -12,5 +12,5 @@ setup(name='twitter_video',
       packages=['Twitter_video_web_service'],
       include_package_data=True,
       zip_safe=False,
-      install_requires=['']
+      install_requires=['django']
       )
