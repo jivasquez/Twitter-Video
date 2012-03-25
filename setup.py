@@ -13,5 +13,5 @@ setup(name='twitter_video',
       include_package_data=True,
       zip_safe=False,
       install_requires=['django', 'django-nonrel'],
-      dependency_links = ["https://bitbucket.org/wkornewald/django-nonrel", "hg+https://bitbucket.org/wkornewald/djangotoolbox", "git+https://github.com/django-nonrel/mongodb-engine" ],
+      dependency_links = ["https://bitbucket.org/wkornewald/django-nonrel/get/be48c152abc6.tar.gz", "hg+https://bitbucket.org/wkornewald/djangotoolbox", "git+https://github.com/django-nonrel/mongodb-engine" ],
       )
