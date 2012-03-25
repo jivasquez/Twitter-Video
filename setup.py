@@ -1,11 +1,11 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 version = '0.1'
 
 setup(name='twitter_video',
       version=version,
-      description="WEB service que almacena y envía videos cortos",
+      description="WEB service que almacena y envia videos cortos",
       keywords='twitter videos cortos',
       author='Juan Ignacio Vasquez',
       author_email='ji.vasquez0@gmail.com',
