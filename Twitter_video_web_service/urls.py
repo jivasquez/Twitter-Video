@@ -21,6 +21,6 @@ urlpatterns = patterns('',
     (r'^list', 'twitter_video.controllers.list.list_videos'),
     (r'^api/list', 'twitter_video.controllers.list.api_list_videos'),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
-    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/Users/juan/Documents/Proyectos/Android/Twitter_video_web_service/videos'}),
+    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATICFILES_DIRS[0]}),
     
 )

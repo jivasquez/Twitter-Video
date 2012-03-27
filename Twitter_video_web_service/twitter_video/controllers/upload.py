@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response
 
 from twitter_video.dbmodels.video import Video
-from twitter_video import VIDEO_DIR
+from django.conf import settings
 
 def upload_video(request):
     if request.method == 'POST':
@@ -17,7 +17,7 @@ def upload_video(request):
         video.save()
         content_type = request.FILES['video'].content_type
         print "content_type", content_type
-        destination = open(VIDEO_DIR+video.id+'.mp4', 'wb+')
+        destination = open(settings.STATICFILES_DIRS[0]+video.id+'.mp4', 'wb+')
         for chunk in request.FILES['video'].chunks():
             destination.write(chunk)
         destination.close()
