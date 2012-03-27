@@ -1,6 +1,7 @@
 from django.conf.urls.defaults import patterns, include, url
 from twitter_video.controllers import upload
 from django.conf import settings
+from twitter_video import VIDEO_DIR
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -21,6 +22,5 @@ urlpatterns = patterns('',
     (r'^list', 'twitter_video.controllers.list.list_videos'),
     (r'^api/list', 'twitter_video.controllers.list.api_list_videos'),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
-    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATICFILES_DIRS[0]}),
-    
+    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': VIDEO_DIR}),
 )
