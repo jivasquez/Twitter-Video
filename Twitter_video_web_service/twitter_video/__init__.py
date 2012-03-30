@@ -1,1 +1,1 @@
-VIDEO_DIR = '/Users/juan/Documents/Proyectos/Android/Twitter_video_web_service/videos'
+VIDEO_DIR = '/Users/juan/Documents/Proyectos/Android/Twitter_video_web_service/videos/'
